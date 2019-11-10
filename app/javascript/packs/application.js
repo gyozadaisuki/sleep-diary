@@ -15,3 +15,7 @@ require("channels")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+
+// boostrap関係のimport
+import "bootstrap"
+import "../stylesheets/application"
