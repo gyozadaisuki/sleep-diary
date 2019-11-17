@@ -32,3 +32,8 @@
 ja:
   flash:
     user_create_success: ユーザー作成に成功しました
+  util:
+    login: Log in
+    logout: Log out
+    application_name: Sleep Diary
+    home: Home

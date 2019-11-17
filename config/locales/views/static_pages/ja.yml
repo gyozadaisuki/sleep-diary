@@ -2,3 +2,4 @@ ja:
   static_pages:
     home:
       signup: 'ユーザー登録'
+      title: 'Home'

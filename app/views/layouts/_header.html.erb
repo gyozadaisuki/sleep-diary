@@ -1,11 +1,22 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
-  <div class="container">
-    <%= link_to "sample app", root_path, id: "logo" %>
-    <nav>
-      <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home",   root_path  %></li>
-        <li><%= link_to "Log in", '#' %></li>
+<header class="navbar fixed-top navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark container">
+    <%= link_to t('util.application_name'), root_path, id: "logo" , class:'navbar-brand' %>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <%= link_to t('util.home'), root_path, class: "nav-link"  %>
+        </li>
       </ul>
-    </nav>
-  </div>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+        <% if logged_in? %>
+          <%= link_to t('util.logout'), logout_path, method: :delete, class: "nav-link" %>
+        <% else %>
+          <%= link_to t('util.login'), login_path, class: "nav-link" %>
+        <% end %> 
+        </li>
+      </ul>
+    </div>
+  </nav>
 </header>

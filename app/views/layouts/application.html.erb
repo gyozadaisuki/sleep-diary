@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SleepDiary</title>
+    <title><%= full_title(yield(:title)) %></title>
     <%= render 'layouts/default' %> 
   </head>
   <body>
@@ -11,6 +11,7 @@
         <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
       <% end %>
       <%= yield %>
+      <%= debug(params) if Rails.env.development? %>
     </div>
   </body>
 </html>
