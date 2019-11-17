@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  week: 1
+  date: 2019-11-17
+  bedtime: 2019-11-17 21:33:30
+  wakeuptime: 2019-11-17 21:33:30
+  time_beforesleep: 2019-11-17 21:33:30
+  awaken_times: 1
+  liquor_type: 1
+  liquor_num: 1
+  feeling: 1
+  sleep_quality: 1
+  naptime: 2019-11-17 21:33:30
+  user: one
+
+two:
+  week: 1
+  date: 2019-11-17
+  bedtime: 2019-11-17 21:33:30
+  wakeuptime: 2019-11-17 21:33:30
+  time_beforesleep: 2019-11-17 21:33:30
+  awaken_times: 1
+  liquor_type: 1
+  liquor_num: 1
+  feeling: 1
+  sleep_quality: 1
+  naptime: 2019-11-17 21:33:30
+  user: two

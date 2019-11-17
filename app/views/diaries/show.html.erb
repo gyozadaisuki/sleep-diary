@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Week:</strong>
+  <%= @diary.week %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @diary.date %>
+</p>
+
+<p>
+  <strong>Bedtime:</strong>
+  <%= @diary.bedtime %>
+</p>
+
+<p>
+  <strong>Wakeuptime:</strong>
+  <%= @diary.wakeuptime %>
+</p>
+
+<p>
+  <strong>Time beforesleep:</strong>
+  <%= @diary.time_beforesleep %>
+</p>
+
+<p>
+  <strong>Awaken times:</strong>
+  <%= @diary.awaken_times %>
+</p>
+
+<p>
+  <strong>Liquor type:</strong>
+  <%= @diary.liquor_type %>
+</p>
+
+<p>
+  <strong>Liquor num:</strong>
+  <%= @diary.liquor_num %>
+</p>
+
+<p>
+  <strong>Feeling:</strong>
+  <%= @diary.feeling %>
+</p>
+
+<p>
+  <strong>Sleep quality:</strong>
+  <%= @diary.sleep_quality %>
+</p>
+
+<p>
+  <strong>Naptime:</strong>
+  <%= @diary.naptime %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @diary.user_id %>
+</p>
+
+<%= link_to 'Edit', edit_diary_path(@diary) %> |
+<%= link_to 'Back', diaries_path %>
